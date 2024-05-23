@@ -1,0 +1,60 @@
+/sample*
+/src*
+
+# Python
+__pycache__/
+*.pyc
+
+# ML stuff
+*.idx3-ubyte
+*.idx1-ubyte
+
+/logs*
+
+*.xmp
+*.zip
+*.pickle
+google_credentials.json
+
+# Intellij project files
+/.idea
+*.iml
+*.iws
+projectFilesBackup/
+
+# VS Code project files
+.vscode
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django stuff:
+*.log
+*.djcache
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+
+# OS-specific files
+*.lnk
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+crmeta.db
+desktop.ini
+
+# React project
+node_modules/
+
+# build/
