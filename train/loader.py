@@ -26,7 +26,11 @@ class MnistDataloader(object):
 			images = np.frombuffer(file.read(), dtype=np.uint8).reshape(size, 28, 28)
 		return images, labels
 
-	def load(self):
+	def load_all(self):
 		images_train, labels_train = self.read_images_labels(self.training_images_path, self.training_labels_path)
 		images_test, labels_test = self.read_images_labels(self.test_images_path, self.test_labels_path)
 		return (images_train, labels_train), (images_test, labels_test)
+
+	def load_test(self):
+		images_test, labels_test = self.read_images_labels(self.test_images_path, self.test_labels_path)
+		return images_test, labels_test
