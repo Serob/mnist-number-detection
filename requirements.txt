@@ -3,3 +3,5 @@ missingno==0.5.2
 numpy==1.26.4
 pandas==2.2.2
 tensorflow==2.16.1
+opencv-python~=4.9.0.80
+keras~=3.3.3

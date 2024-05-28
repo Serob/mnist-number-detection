@@ -8,7 +8,6 @@ print(device_lib.list_local_devices())
 from train.loader import MnistDataloader
 
 data_dir = '../data'
-# training_images = join(data_dir, 'train-images.idx3-ubyte')
 train_images_path = '../data/train-images.idx3-ubyte'
 train_labels_path = '../data/train-labels.idx1-ubyte'
 test_images_path = '../data/t10k-images.idx3-ubyte'
@@ -51,7 +50,7 @@ for i in range(10):
 		train_labels,
 		epochs=14,
 		validation_data=(test_images, test_labels)
-	)  # validation_data=(test_images, test_labels)
+	)
 
 	test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
@@ -67,10 +66,3 @@ def plot_image(images, labels, index: int):
 	plt.title(labels[index], fontsize=20)
 	plt.colorbar()
 	plt.show()
-
-
-# for i in range(5):
-# 	plot_image(test_images, test_labels, i)
-
-
-
